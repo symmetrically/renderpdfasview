@@ -1,6 +1,6 @@
 # Renderpdfasview
 
-TODO: Write a gem description
+A simple RubyGem to render views in Rails Application in PDF format
 
 ## Installation
 
@@ -18,7 +18,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    class UserController < ApplicationController
+
+        def index
+            
+            respond_to do |format|
+                
+                format.html
+                format.pdf { render :pdf => "pdfname" }
+            end
+
+        end
+
+    end
 
 ## Contributing
 
