@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Renderpdfasview::VERSION
   
-  gem.add_dependency("capybara", ">= 0.4.0")
+  gem.add_development_dependency("capybara", ">= 0.4.0")
   gem.add_dependency("prawn","0.8.4")
   
   
